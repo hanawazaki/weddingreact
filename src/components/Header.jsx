@@ -18,7 +18,7 @@ export default function Header() {
               </div>
               <div className="col-lg-2 col-md-6 col-6">
                 <div className="navbar-header">
-                  <a className="navbar-brand logo" href="index.html">N<span>o</span>zze</a>
+                  <a className="navbar-brand logo" href="index.html">H<span>&</span>F</a>
                 </div>
               </div>
               <div className="col-lg-8 col-md-1 col-1">
@@ -46,27 +46,6 @@ export default function Header() {
                     </li>
                     <li>
                       <a href="#event">Events</a>
-                    </li>
-                    <li className="menu-item-has-children">
-                      <a href="#">Blog</a>
-                      <ul className="sub-menu">
-                        <li><a href="blog.html">Blog right sidebar</a></li>
-                        <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
-                        <li><a href="blog-fullwidth.html">Blog fullwidth</a></li>
-                        <li className="menu-item-has-children">
-                          <a href="#">Blog details</a>
-                          <ul className="sub-menu">
-                            <li><a href="blog-single.html">Blog details right
-                              sidebar</a>
-                            </li>
-                            <li><a href="blog-single-left-sidebar.html">Blog details
-                              left
-                              sidebar</a></li>
-                            <li><a href="blog-single-fullwidth.html">Blog details
-                              fullwidth</a></li>
-                          </ul>
-                        </li>
-                      </ul>
                     </li>
                   </ul>
 
