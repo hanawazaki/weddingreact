@@ -12,7 +12,7 @@ export default function Partners() {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
@@ -22,7 +22,7 @@ export default function Partners() {
           slidesToShow: 6,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: true,
         }
       },
       {
@@ -51,19 +51,29 @@ export default function Partners() {
           <div className="col col-xs-12">
             <Slider className="partner-grids partners-slider owl-carousel" {...settings}>
               <div className="grid">
-                <img src={partners1} alt="" />
+                <a href="https://www.instagram.com/dival_weddingorganizer/" target='_blank'>
+                  <img src={partners1} alt="" />
+                </a>
               </div>
               <div className="grid">
-                <img src={partners2} alt="" />
+                <a href="https://www.instagram.com/lkp_eginaumi/" target='_blank'>
+                  <img src={partners2} alt="" />
+                </a>
               </div>
               <div className="grid">
-                <img src={partners3} alt="" />
+                <a href="#" target='_blank'>
+                  <img src={partners3} alt="" />
+                </a>
               </div>
               <div className="grid">
-                <img src={partners4} alt="" />
+                <a href="https://www.instagram.com/dlovamusic.entertainment/" target='_blank'>
+                  <img src={partners4} alt="" />
+                </a>
               </div>
               <div className="grid">
-                <img src={partners5} alt="" />
+                <a href="https://www.instagram.com/skycateringndecoration/" target='_blank'>
+                  <img src={partners5} alt="" />
+                </a>
               </div>
             </Slider>
           </div>

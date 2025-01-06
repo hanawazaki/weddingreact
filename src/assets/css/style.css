@@ -6488,6 +6488,7 @@ wpo-hero-section-s2
   width: auto;
   margin: 0 auto;
   display: inline-block;
+  height: 150px;
 }
 
 .wpo-partners-section .owl-nav {
@@ -12970,4 +12971,11 @@ product-design
 
 .error-404-section .error-message p {
   margin-bottom: 1.8em;
+}
+
+.logo-footer{
+  font-size: 35px;
+  font-family: "Petit Formal Script", cursive;
+  color: #212121;
+  margin-right: 0;
 }

@@ -43,11 +43,11 @@ export default function OurStory() {
                     <i className="fi flaticon-heart-1"></i>
                   </span>
                   <div className="story-text">
-                    <span className="date">22 Feb, 2019</span>
-                    <h3>How we meet</h3>
-                    <p>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
-                      Enim tortor, faucibus netus orci donec volutpat adipiscing. Sit condimentum
-                      elit convallis libero. Nunc in eu tellus ipsum placerat.</p>
+                    <span className="date">15 Oktober, 2023</span>
+                    <h3>Awal Pertemuan</h3>
+                    <p>
+                      Fauziyyah adalah adik kelas Hairul semasa SMA. Namun, pertemuan pertama kami terjadi di tempat olahraga bulutangkis saat teman-teman alumni SMA kembali berkumpul untuk bermain bersama. Kami berdua merasa nyaman dan saling memahami satu sama lain hingga akhirnya memutuskan untuk menjalin hubungan yang lebih serius pada bulan Juli 2024
+                    </p>
                   </div>
                 </div>
               </div>
@@ -57,11 +57,9 @@ export default function OurStory() {
                     <i className="fi flaticon-heart-1"></i>
                   </span>
                   <div className="story-text right-align-text">
-                    <span className="date">02 Nov, 2020</span>
-                    <h3>He proposed, I said Yes</h3>
-                    <p>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
-                      Enim tortor, faucibus netus orci donec volutpat adipiscing. Sit condimentum
-                      elit convallis libero. Nunc in eu tellus ipsum placerat.</p>
+                    <span className="date">18 Agustus, 2024</span>
+                    <h3>Pertemuan Keluarga</h3>
+                    <p>Akhirnya, pada 18 Agustus 2024, keluarga kami bertemu untuk pertama kalinya. Pertemuan ini menjadi langkah awal penting dalam hubungan kami, karena kami mulai membicarakan rencana besar untuk masa depan bersama.</p>
                   </div>
                 </div>
                 <div className="col col-lg-6 col-12 order-lg-2 order-1">
@@ -93,11 +91,33 @@ export default function OurStory() {
                     <i className="fi flaticon-heart-1"></i>
                   </span>
                   <div className="story-text">
-                    <span className="date"> 15 Apr, 2021</span>
-                    <h3>Our Engagement Day</h3>
-                    <p>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
-                      Enim tortor, faucibus netus orci donec volutpat adipiscing. Sit condimentum
-                      elit convallis libero. Nunc in eu tellus ipsum placerat.</p>
+                    <span className="date"> 5 Oktober, 2024</span>
+                    <h3>Pertemuan Keluarga Kedua
+                    </h3>
+                    <p>Langkah berikutnya dalam perjalanan cinta kami terjadi pada 5 Oktober 2024, dimana saat pertemuan keluarga kedua ini Hairul secara resmi mengkhitbah Fauziyyah. Pertemuan ini diadakan di sebuah tempat di Bandung. Setelah itu, keluarga kami mulai mempersiapkan rencana pernikahan yang melibatkan acara akad dan resepsi yang dilaksanakan secara terpisah.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col col-lg-6 col-12 order-lg-1 order-2 text-holder right-heart">
+                  <span className="heart">
+                    <i className="fi flaticon-heart-1"></i>
+                  </span>
+                  <div className="story-text right-align-text">
+                    <span className="date">26 Desember, 2024</span>
+                    <h3>Hari Pernikahan</h3>
+                    <p>Alhamdulillah, hari yang dinantikan akhirnya tiba. Pada 26 Desember 2024, kami melangsungkan akad pernikahan di Masjid Salman ITB. Acara yang sakral ini dihadiri oleh keluarga dan kerabat terdekat. Selanjutnya, kami mempersiapkan acara resepsi yang akan dilaksanakan pada 18 Januari 2025 untuk merayakan hari bahagia kami bersama teman-teman dan keluarga yang lebih luas.</p>
+                  </div>
+                </div>
+                <div className="col col-lg-6 col-12 order-lg-2 order-1">
+                  <div className="img-holder right-align-img">
+                    <img src={story2} alt="" className="img img-responsive" />
+                    <div className="story-shape-img-1">
+                      <img src={shape3} alt="" />
+                    </div>
+                    <div className="story-shape-img-2">
+                      <img src={shape4} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>

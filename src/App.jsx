@@ -1,9 +1,13 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './assets/css/themify-icons.css'
+import './assets/css/font-awesome.min.css'
+import './assets/css/flaticon.css'
 import './assets/css/style.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import Preloader from './components/Preloader'
 import Header from './components/Header'
 import Hero from './components/Hero'

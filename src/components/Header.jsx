@@ -52,8 +52,8 @@ export default function Header() {
   return (
     <header id="header" >
       <div className="wpo-site-header">
-        <Navigation className="original" />
-        <Navigation className="sticky-header" />
+        <Navigation nameClass="original" />
+        <Navigation nameClass="sticky-header" />
       </div>
 
       {isBackToTopVisible && (

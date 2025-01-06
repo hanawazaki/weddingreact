@@ -1,7 +1,17 @@
 import sectionTitle from '../assets/images/section-title.png';
 import event1 from '../assets/images/event/1.jpg';
+import { useState, useEffect } from 'react';
 
 export default function Event() {
+  const [TimeSchedule, setTimeSchedule] = useState('11:30 AM - 01:30 PM');
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+
+    if (queryParams.has('undangan keluarga')) {
+      setTimeSchedule("08:30 AM - 11:00 AM (Khusus Keluarga)");
+    }
+  }, []);
 
   return (
     <section className="wpo-event-section section-padding" id="event">
@@ -22,15 +32,13 @@ export default function Event() {
             </div>
             <div className="wpo-event-right">
               <div className="wpo-event-text">
-                <h2>The Reception</h2>
+                <h2>Resepsi</h2>
                 <ul>
-                  <li>Monday, 12 Apr. 2022
-                    1:00 PM – 2:30 PM</li>
-                  <li>4517 Washington Ave. Manchester, Kentucky 39495</li>
-                  <li>+1 234-567-8910</li>
+                  <li>Sabtu, 18 Jan. 2025 {TimeSchedule}</li>
+                  <li>Gedung Senbik</li>
+                  <li>Jl. Soekarno-Hatta No.729C, Kota Bandung, Jawa Barat 40286</li>
                   <li> <a className="popup-gmaps"
-                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25211.21212385712!2d144.95275648773628!3d-37.82748510398018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2zTWVsYm91cm5lIFZJQyAzMDA0LCDgpoXgprjgp43gpp_gp43gprDgp4fgprLgpr_gpq_gprzgpr4!5e0!3m2!1sbn!2sbd!4v1503742051881">See
-                    Location</a></li>
+                    href="https://maps.app.goo.gl/yuLfr4DL8qBGPW7XA" target='_blank'>Lihat Lokasi</a></li>
                 </ul>
               </div>
             </div>

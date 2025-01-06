@@ -41,7 +41,7 @@ export default function WeddingTime() {
   }, []);
 
   return (
-    <section className="wpo-wedding-time">
+    <section className="wpo-wedding-time section-padding">
       <h2 className="hidden">some</h2>
       <div className="container-fluid">
         <div className="row">
@@ -49,9 +49,8 @@ export default function WeddingTime() {
             <div className="clock-grids">
               <div className="clock-grids-inner">
                 <div className="wpo-wedding-time-text">
-                  <h2>We <i className="fi flaticon-heart-1"></i> Are <i className="fi flaticon-heart-1"></i>
-                    Getting <i className="fi flaticon-heart-1"></i> Married</h2>
-                  <p>Date : Jan 18,2025</p>
+                  <h2>We <i className="fi flaticon-heart-1"></i> Are <i className="fi flaticon-heart-1"></i> Getting <i className="fi flaticon-heart-1"></i> Married</h2>
+                  <p>Date : 18 Januari 2025</p>
                 </div>
                 <div id="clock">
                   <div className="box">

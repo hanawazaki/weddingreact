@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-export default function Navigation({ className }) {
+export default function Navigation({ nameClass }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleToggleMenu = (e) => {
@@ -8,7 +8,7 @@ export default function Navigation({ className }) {
 
     const navHolder = e.target.closest("nav").querySelector(".navigation-holder");
     navHolder.classList.toggle("slideInn");
-    e.target.classList.toggle("x-close");
+    // e.target.classList.toggle("x-close");
   };
 
   const closeNav = () => {
@@ -16,13 +16,13 @@ export default function Navigation({ className }) {
   }
 
   return (
-    <nav className={`navigation navbar navbar-expand-lg navbar-light ${className}`}>
+    <nav className={`navigation navbar navbar-expand-lg navbar-light ${nameClass}`}>
 
       <div className="container-fluid">
         <div className="row align-items-center">
           <div className="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
             <div className="mobail-menu">
-              <button type="button" className="navbar-toggler open-btn" onClick={handleToggleMenu}>
+              <button type="button" className={`navbar-toggler open-btn ${isMenuOpen ? 'x-close' : ''}`} onClick={handleToggleMenu}>
                 <span className="sr-only">Toggle navigation</span>
                 <span className="icon-bar first-angle"></span>
                 <span className="icon-bar middle-angle"></span>
@@ -32,7 +32,7 @@ export default function Navigation({ className }) {
           </div>
           <div className="col-lg-2 col-md-6 col-6">
             <div className="navbar-header">
-              <a className="navbar-brand logo" href="/">H<span>&</span>F</a>
+              <label className="navbar-brand logo">H<span>&</span>F</label>
             </div>
           </div>
           <div className="col-lg-8 col-md-1 col-1">
