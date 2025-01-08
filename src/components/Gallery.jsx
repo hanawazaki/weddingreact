@@ -1,10 +1,15 @@
 
-import portfolio1 from '../assets/images/portfolio/1.jpg';
-import portfolio2 from '../assets/images/portfolio/2.jpg';
-import portfolio3 from '../assets/images/portfolio/3.jpg';
-import portfolio4 from '../assets/images/portfolio/4.jpg';
-import portfolio5 from '../assets/images/portfolio/5.jpg';
-import portfolio6 from '../assets/images/portfolio/6.jpg';
+import React, { useEffect } from "react";
+import { Fancybox as NativeFancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+import photos1 from '../assets/images/photos/gallery/1.jpg';
+import photos2 from '../assets/images/photos/gallery/2.jpg';
+import photos3 from '../assets/images/photos/gallery/3.jpg';
+import photos4 from '../assets/images/photos/gallery/4.jpg';
+import photos5 from '../assets/images/photos/gallery/5.jpg';
+import photos6 from '../assets/images/photos/gallery/6.jpg';
+
 import Slider from "react-slick";
 
 export default function Gallery() {
@@ -44,6 +49,21 @@ export default function Gallery() {
     ]
   };
 
+  useEffect(() => {
+    NativeFancybox.bind("[data-fancybox]", {
+      animated: true,
+      dragToClose: false,
+      toolbar: true,
+      showClass: "fancybox-slideIn",
+      hideClass: "fancybox-slideOut",
+      infinite: false,
+    });
+
+    return () => {
+      NativeFancybox.destroy();
+    };
+  }, []);
+
   return (
     <section className="wpo-portfolio-section section-padding pt-0" id="gallery">
       <h2 className="hidden">some</h2>
@@ -53,9 +73,10 @@ export default function Gallery() {
             <Slider className="portfolio-grids gallery-container clearfix portfolio-slide" {...settings}>
               <div className="grid">
                 <div className="img-holder">
-                  <a href={portfolio1} className="fancybox"
-                    data-fancybox-group="gall-1">
-                    <img src={portfolio1} alt="" className="img img-responsive" />
+                  <a href={photos1} className="fancybox"
+                    data-fancybox="gallery"
+                  >
+                    <img src={photos1} alt="" className="img img-responsive img-height-custom" />
                     <div className="hover-content">
                       <i className="ti-plus"></i>
                     </div>
@@ -64,9 +85,10 @@ export default function Gallery() {
               </div>
               <div className="grid">
                 <div className="img-holder">
-                  <a href={portfolio2} className="fancybox"
-                    data-fancybox-group="gall-1">
-                    <img src={portfolio2} alt="" className="img img-responsive" />
+                  <a href={photos2} className="fancybox"
+                    data-fancybox="gallery"
+                  >
+                    <img src={photos2} alt="" className="img img-responsive img-height-custom" />
                     <div className="hover-content">
                       <i className="ti-plus"></i>
                     </div>
@@ -75,9 +97,9 @@ export default function Gallery() {
               </div>
               <div className="grid">
                 <div className="img-holder">
-                  <a href={portfolio3} className="fancybox"
-                    data-fancybox-group="gall-1">
-                    <img src={portfolio3} alt="" className="img img-responsive" />
+                  <a href={photos3} data-fancybox="gallery" className="fancybox"
+                  >
+                    <img src={photos3} alt="" className="img img-responsive img-height-custom" />
                     <div className="hover-content">
                       <i className="ti-plus"></i>
                     </div>
@@ -86,9 +108,10 @@ export default function Gallery() {
               </div>
               <div className="grid">
                 <div className="img-holder">
-                  <a href={portfolio4} className="fancybox"
-                    data-fancybox-group="gall-1">
-                    <img src={portfolio4} alt="" className="img img-responsive" />
+                  <a href={photos4} className="fancybox"
+                    data-fancybox="gallery"
+                  >
+                    <img src={photos4} alt="" className="img img-responsive img-height-custom" />
                     <div className="hover-content">
                       <i className="ti-plus"></i>
                     </div>
@@ -97,9 +120,10 @@ export default function Gallery() {
               </div>
               <div className="grid">
                 <div className="img-holder">
-                  <a href={portfolio5} className="fancybox"
-                    data-fancybox-group="gall-1">
-                    <img src={portfolio5} alt="" className="img img-responsive" />
+                  <a href={photos5} className="fancybox"
+                    data-fancybox="gallery"
+                  >
+                    <img src={photos5} alt="" className="img img-responsive img-height-custom" />
                     <div className="hover-content">
                       <i className="ti-plus"></i>
                     </div>
@@ -108,9 +132,10 @@ export default function Gallery() {
               </div>
               <div className="grid">
                 <div className="img-holder">
-                  <a href={portfolio6} className="fancybox"
-                    data-fancybox-group="gall-1">
-                    <img src={portfolio6} alt="" className="img img-responsive" />
+                  <a href={photos6} className="fancybox"
+                    data-fancybox="gallery"
+                  >
+                    <img src={photos6} alt="" className="img img-responsive img-height-custom" />
                     <div className="hover-content">
                       <i className="ti-plus"></i>
                     </div>

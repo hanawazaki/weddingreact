@@ -337,6 +337,22 @@ img {
   transition: all 0.2s;
 }
 
+.play-button {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border: 2px solid #c8a898;
+  border-radius: 45px;
+  text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 999;
+  right: 15px;
+  bottom: 15px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 @media (max-width: 991px) {
   .back-to-top {
     width: 35px;
@@ -12973,9 +12989,92 @@ product-design
   margin-bottom: 1.8em;
 }
 
-.logo-footer{
+.logo-footer {
   font-size: 35px;
   font-family: "Petit Formal Script", cursive;
   color: #212121;
   margin-right: 0;
+}
+
+.flower1 {
+  height: 385px;
+}
+.flower2 {
+  height: 385px;
+  rotate: 180deg;
+}
+
+@media (max-width: 767px) {
+  .flower1 {
+    height: 150px;
+  }
+  .flower2 {
+    height: 150px;
+    rotate: 180deg;
+  }
+}
+
+.img-height {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.btn-schedule {
+  background-color: #c8a898; /* Warna latar belakang tombol */
+  color: white; /* Warna teks */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-schedule:hover {
+  background-color: #a08679; /* Warna latar belakang tombol saat hover */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-content button {
+  background-color: #c8a898;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #ff4500;
+}
+
+.img-height-custom {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }

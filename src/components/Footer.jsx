@@ -11,9 +11,10 @@ export default function Footer() {
             <div className="col col-12">
               <div className="widget about-widget">
                 <div className="logo widget-title">
-                  <label className="logo-footer" href="/">H<span>&</span>F</label>
+                  <label className="logo-footer" href="/">F<span>&</span>H</label>
                 </div>
-                <p>Kami tak sabar untuk bertemu dengan semua teman dan kerabat tercinta di hari pernikahan kami nanti.</p>
+                <p>Terima Kasih</p>
+                <p>Kami tak sabar untuk bertemu dengan semua teman dan kerabat tercinta di hari walimah kami nanti.</p>
               </div>
             </div>
           </div>

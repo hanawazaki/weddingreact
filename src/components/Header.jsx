@@ -1,10 +1,31 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Navigation from "./Navigation";
 
 export default function Header() {
   const [isBackToTopVisible, setIsBackToTopVisible] = useState(false);
+  const audioRef = useRef('');
+  const [isPlaying, setIsPlaying] = useState(true); // Status play/pause
+
+  const togglePlayPause = () => {
+    const audio = audioRef.current;
+    if (audio.paused) {
+      audio.play();
+      setIsPlaying(true);
+    } else {
+      audio.pause();
+      setIsPlaying(false);
+    }
+  };
 
   useEffect(() => {
+
+    const audio = audioRef.current;
+    if (audio) {
+      audio.play().catch((err) => {
+        console.error("Auto-play failed:", err); // Tangkap error (misalnya browser memblokir auto-play)
+      });
+    }
+
     const navOriginal = document.querySelector(".navigation.navbar.navbar-expand-lg.navbar-light");
 
     if (navOriginal) {
@@ -49,13 +70,57 @@ export default function Header() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const styles = {
+    container: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      height: "100vh",
+      backgroundColor: "#f0f0f0",
+    },
+    button: {
+      position: "fixed",
+      bottom: "75px",
+      right: "20px",
+      width: "48px",
+      height: "48px",
+      borderRadius: "50%",
+      border: "none",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2)",
+      cursor: "pointer",
+      outline: "none",
+      transition: "background-color 0.3s ease, transform 0.2s ease",
+    },
+    icon: {
+      color: "#fff",
+      fontSize: "24px",
+    }
+  }
+
+
   return (
     <header id="header" >
       <div className="wpo-site-header">
         <Navigation nameClass="original" />
         <Navigation nameClass="sticky-header" />
       </div>
-
+      <audio loop ref={audioRef} src="/song1.ogg" />
+      <button
+        className="play-button"
+        onClick={togglePlayPause}
+        style={{
+          ...styles.button,
+          backgroundColor: isPlaying ? "#000" : "#000",
+        }}
+      >
+        <i
+          className={`ti ${isPlaying ? "ti-control-pause" : "ti-control-play"}`}
+          style={styles.icon}
+        ></i>
+      </button>
       {isBackToTopVisible && (
         <button
           className="back-to-top"
@@ -76,9 +141,13 @@ export default function Header() {
             justifyContent: "center",
           }}
         >
+
           <i className="ti-arrow-up" style={{ fontSize: "16px" }}></i>
         </button>
       )}
     </header>
   )
+
+
+
 }

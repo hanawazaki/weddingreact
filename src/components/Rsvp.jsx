@@ -1,5 +1,7 @@
 
 import { useState } from 'react';
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../../firebaseConfig";
 import vector1 from '../assets/images/contact/1.png';
 import vector2 from '../assets/images/contact/2.png';
 
@@ -7,21 +9,37 @@ export default function Rsvp() {
   const [formData, setFormData] = useState({
     name: '',
     message: '',
-    attendance: 'attend',
-    count: '1',
+    attendance: 'not',
+    count: 0,
   });
 
   const handleChange = (e) => {
-    const { name, value, id } = e.target;
+    const { name, value, id, type } = e.target;
+
+    const updatedValue = type === 'number' ? Number(value) : value;
+
     setFormData({
       ...formData,
-      [name || 'attendance']: id || value, // Handle radio button by 'id'
+      [name || 'attendance']: id || updatedValue, // Handle radio button by 'id'
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form data submitted:', formData);
+    try {
+      const docRef = await addDoc(collection(db, "rsvp"), formData);
+      alert("Data berhasil disimpan!");
+      // Reset form (optional)
+      setFormData({
+        name: '',
+        message: '',
+        attendance: 'not',
+        count: 0,
+      });
+    } catch (error) {
+      console.error("Error adding document: ", error);
+      alert("Terjadi kesalahan saat menyimpan data.");
+    }
   };
 
   return (
@@ -78,19 +96,26 @@ export default function Rsvp() {
                 </p>
               </div>
               <div>
-                <label htmlFor="" style={{ color: "white" }}>
-                  Jumlah Kehadiran
-                </label>
-                <input type="number" className='form-control'
-                  name="count"
-                  value={formData.count}
-                  onChange={handleChange}
-                  required
-                />
+                {
+                  formData.attendance === 'attend' && (
+                    <>
+                      <label htmlFor="" style={{ color: "white" }}>
+                        Jumlah Kehadiran
+                      </label>
+                      <input type="number" className='form-control'
+                        name="count"
+                        value={formData.count}
+                        onChange={handleChange}
+                        required
+                      />
+
+                    </>
+                  )
+                }
 
               </div>
               <div className="submit-area">
-                <button type="submit" className="theme-btn-s3">Kirim</button>
+                <button type="submit" className="btn-schedule">Kirim</button>
                 <div id="c-loader">
                   <i className="ti-reload"></i>
                 </div>

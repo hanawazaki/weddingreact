@@ -18,22 +18,45 @@ import Rsvp from './components/Rsvp';
 import Event from './components/Event';
 import Partners from './components/Partners';
 import Footer from './components/Footer';
+import { useState } from 'react';
+import Cover from './components/Cover';
 
 function App() {
+  const [showCover, setShowCover] = useState(true);
+  const [animationClass, setAnimationClass] = useState('');
+
+  const handleCloseCover = () => {
+    setAnimationClass('fade-out'); // Tambahkan kelas animasi
+    setTimeout(() => {
+      setShowCover(false); // Sembunyikan cover setelah animasi selesai
+    }, 1000); // Waktu sesuai durasi animasi
+  };
+
+
+
   return (
     <>
-      <div className="page-wrapper">
-        <Preloader />
-        <Header />
-        <Hero />
-        <WeddingTime />
-        <OurStory />
-        <Gallery />
-        <Rsvp />
-        <Event />
-        <Partners />
-        <Footer />
-      </div>
+      {
+        showCover ? (
+          <div>
+            <Preloader />
+            <Cover onClose={handleCloseCover} animationClass={animationClass} />
+          </div>
+        ) : (
+          <div className="page-wrapper">
+            <Header />
+            <Hero />
+            <WeddingTime />
+            <OurStory />
+            <Gallery />
+            <Rsvp />
+            <Event />
+            <Partners />
+            <Footer />
+          </div>
+        )
+      }
+
     </>
   )
 }

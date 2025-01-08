@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import st1 from '../assets/images/slider/st1.jpg';
 import st2 from '../assets/images/slider/st2.jpg';
 import st3 from '../assets/images/slider/st3.jpg';
+import h1 from '../assets/images/photos/h1.jpg';
+import f1 from '../assets/images/photos/f1.jpg';
+import fh from '../assets/images/photos/fh.jpg';
 
 export default function Hero() {
 
@@ -49,19 +52,27 @@ export default function Hero() {
           <div className="col col-xl-3 col-lg-3 col-12">
             <div className="hero-wrap">
               <div className="wpo-hero-text">
-                <h3>Hairul Ardhan Nawazaki</h3>
+                <h3>Fauziyyah Khoirunnisa FR</h3>
+                <div className="social">
+                  <ul>
+                    <li><a href="https://www.instagram.com/namu.1313" target='_blank'><i className="fi flaticon-instagram-1"></i></a></li>
+                  </ul>
+                </div>
+                <div className='mt-3'>
+                  <h5 className='fs-6 fw-light'>Putri dari <br /> Bapak Yazida Rachman <br /> Ibu Yatty Nuhayati</h5>
+                </div>
               </div>
               <div className="wpo-hero-img floating-item" style={{
                 transform: `translateX(${position.x}px) translateY(${position.y}px)`
               }}>
-                <img src={st1} alt="st1" />
+                <img src={f1} alt="st1" />
               </div>
             </div>
           </div>
           <div className="col col-xl-6 col-lg-6 col-12">
             <div className="hero-wrap">
               <div className="wpo-hero-img">
-                <img src={st2} alt="st2" />
+                <img src={fh} alt="fh" />
               </div>
             </div>
           </div>
@@ -70,10 +81,20 @@ export default function Hero() {
               <div className="wpo-hero-img floating-item" style={{
                 transform: `translateX(${position.x}px) translateY(${position.y}px)`
               }}>
-                <img src={st3} alt="st3" />
+                <img src={h1} alt="st3" />
               </div>
               <div className="wpo-hero-text">
-                <h3>Fauziyyah Khoirunnisa FR</h3>
+                <h3>Hairul Ardhan Nawazaki</h3>
+                <div className="social">
+                  <ul>
+                    <li><a href="https://www.facebook.com/hairulardhan.nawazaki" target='_blank'><i className="fi flaticon-facebook-app-symbol"></i></a></li>
+                    <li><a href="https://x.com/ha_nawazaki" target='_blank'><i className="fi flaticon-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/hanawazaki" target='_blank'><i className="fi flaticon-instagram-1"></i></a></li>
+                  </ul>
+                </div>
+                <div className='mt-3'>
+                  <h5 className='fs-6 fw-light'>Putra dari <br /> Bapak Iwan Hermawan, S.Pd.M.M <br /> Ibu Dini Sobardini, S.Pd</h5>
+                </div>
               </div>
             </div>
           </div>

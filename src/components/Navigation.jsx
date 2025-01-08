@@ -15,6 +15,14 @@ export default function Navigation({ nameClass }) {
     setIsMenuOpen(false);
   }
 
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className={`navigation navbar navbar-expand-lg navbar-light ${nameClass}`}>
 
@@ -32,7 +40,7 @@ export default function Navigation({ nameClass }) {
           </div>
           <div className="col-lg-2 col-md-6 col-6">
             <div className="navbar-header">
-              <label className="navbar-brand logo">H<span>&</span>F</label>
+              <label className="navbar-brand logo">F<span>&</span>H</label>
             </div>
           </div>
           <div className="col-lg-8 col-md-1 col-1">
@@ -40,19 +48,16 @@ export default function Navigation({ nameClass }) {
               <button className="menu-close" onClick={closeNav}><i className="ti-close"></i></button>
               <ul className="nav navbar-nav mb-2 mb-lg-0">
                 <li>
-                  <a href="#">Home</a>
+                  <a href="#story" onClick={(e) => handleScroll(e, "story")}>Kisah Kami</a>
                 </li>
                 <li>
-                  <a href="#story">Story</a>
+                  <a href="#gallery" onClick={(e) => handleScroll(e, "gallery")}>Galeri</a>
                 </li>
                 <li>
-                  <a href="#gallery">Gallery</a>
+                  <a href="#RSVP" onClick={(e) => handleScroll(e, "RSVP")}>RSVP</a>
                 </li>
                 <li>
-                  <a href="#RSVP">RSVP</a>
-                </li>
-                <li>
-                  <a href="#event">Events</a>
+                  <a href="#event" onClick={(e) => handleScroll(e, "event")}>Waktu & Tempat</a>
                 </li>
               </ul>
             </div>

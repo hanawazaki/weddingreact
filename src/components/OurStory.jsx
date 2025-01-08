@@ -1,7 +1,8 @@
 import sectionTitle from '../assets/images/section-title.png';
-import story1 from '../assets/images/story/1.jpg';
-import story2 from '../assets/images/story/2.jpg';
-import story3 from '../assets/images/story/3.jpg';
+import story1 from '../assets/images/photos/1st.jpg';
+import story2 from '../assets/images/photos/prakhitbah.jpg';
+import story3 from '../assets/images/photos/khitbah.jpg';
+import story4 from '../assets/images/photos/nikah.jpg';
 import shape1 from '../assets/images/story/shape-1.png';
 import shape2 from '../assets/images/story/shape-2.png';
 import shape3 from '../assets/images/story/shape-3.png';
@@ -15,8 +16,8 @@ export default function OurStory() {
       <div className="container">
         <div className="row">
           <div className="wpo-section-title">
-            <span>Our Story</span>
-            <h2>How It Happened</h2>
+            <span>Kisah Kami</span>
+            <h2>Bagaimana kami berproses</h2>
             <div className="section-title-img">
               <img src={sectionTitle} alt="" />
             </div>
@@ -29,7 +30,7 @@ export default function OurStory() {
               <div className="row">
                 <div className="col col-lg-6 col-12">
                   <div className="img-holder right-align-text left-site">
-                    <img src={story1} alt="" className="img img-responsive" />
+                    <img src={story1} alt="" className="img img-responsive img-height-1" />
                     <div className="story-shape-img-1">
                       <img src={shape1} alt="" />
                     </div>
@@ -64,7 +65,7 @@ export default function OurStory() {
                 </div>
                 <div className="col col-lg-6 col-12 order-lg-2 order-1">
                   <div className="img-holder right-align-img">
-                    <img src={story2} alt="" className="img img-responsive" />
+                    <img src={story2} alt="" className="img img-responsive img-height" />
                     <div className="story-shape-img-1">
                       <img src={shape3} alt="" />
                     </div>
@@ -77,7 +78,7 @@ export default function OurStory() {
               <div className="row">
                 <div className="col col-lg-6 col-12">
                   <div className="img-holder video-holder left-site">
-                    <img src={story3} alt="" className="img img-responsive" />
+                    <img src={story3} alt="" className="img img-responsive img-height" />
                     <div className="story-shape-img-1">
                       <img src={shape5} alt="" />
                     </div>
@@ -92,7 +93,7 @@ export default function OurStory() {
                   </span>
                   <div className="story-text">
                     <span className="date"> 5 Oktober, 2024</span>
-                    <h3>Pertemuan Keluarga Kedua
+                    <h3>Khitbah
                     </h3>
                     <p>Langkah berikutnya dalam perjalanan cinta kami terjadi pada 5 Oktober 2024, dimana saat pertemuan keluarga kedua ini Hairul secara resmi mengkhitbah Fauziyyah. Pertemuan ini diadakan di sebuah tempat di Bandung. Setelah itu, keluarga kami mulai mempersiapkan rencana pernikahan yang melibatkan acara akad dan resepsi yang dilaksanakan secara terpisah.</p>
                   </div>
@@ -111,7 +112,7 @@ export default function OurStory() {
                 </div>
                 <div className="col col-lg-6 col-12 order-lg-2 order-1">
                   <div className="img-holder right-align-img">
-                    <img src={story2} alt="" className="img img-responsive" />
+                    <img src={story4} alt="" className="img img-responsive img-height" />
                     <div className="story-shape-img-1">
                       <img src={shape3} alt="" />
                     </div>

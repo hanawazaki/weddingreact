@@ -49,8 +49,8 @@ export default function WeddingTime() {
             <div className="clock-grids">
               <div className="clock-grids-inner">
                 <div className="wpo-wedding-time-text">
-                  <h2>We <i className="fi flaticon-heart-1"></i> Are <i className="fi flaticon-heart-1"></i> Getting <i className="fi flaticon-heart-1"></i> Married</h2>
-                  <p>Date : 18 Januari 2025</p>
+                  <h2><i className="fi flaticon-heart-1"></i> Walimatul Ursy <i className="fi flaticon-heart-1"></i></h2>
+                  <p>Sabtu, 18 Januari 2025</p>
                 </div>
                 <div id="clock">
                   <div className="box">
