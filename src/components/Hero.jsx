@@ -52,14 +52,14 @@ export default function Hero() {
           <div className="col col-xl-3 col-lg-3 col-12">
             <div className="hero-wrap">
               <div className="wpo-hero-text">
-                <h3>Fauziyyah Khoirunnisa FR</h3>
+                <h3>Fauziyyah Khoirunnisa FR, S.T</h3>
                 <div className="social">
                   <ul>
                     <li><a href="https://www.instagram.com/namu.1313" target='_blank'><i className="fi flaticon-instagram-1"></i></a></li>
                   </ul>
                 </div>
                 <div className='mt-3'>
-                  <h5 className='fs-6 fw-light'>Putri dari <br /> Bapak Yazida Rachman <br /> Ibu Yatty Nuhayati</h5>
+                  <h5 className='fs-6 fw-light'><span className='subtextName'>Putri dari</span> <br /> Bapak Yazida Rachman <br /> Ibu Yatty Nuhayati</h5>
                 </div>
               </div>
               <div className="wpo-hero-img floating-item" style={{
@@ -84,7 +84,7 @@ export default function Hero() {
                 <img src={h1} alt="st3" />
               </div>
               <div className="wpo-hero-text">
-                <h3>Hairul Ardhan Nawazaki</h3>
+                <h3>Hairul Ardhan Nawazaki, S.Kom</h3>
                 <div className="social">
                   <ul>
                     <li><a href="https://www.facebook.com/hairulardhan.nawazaki" target='_blank'><i className="fi flaticon-facebook-app-symbol"></i></a></li>
@@ -93,7 +93,7 @@ export default function Hero() {
                   </ul>
                 </div>
                 <div className='mt-3'>
-                  <h5 className='fs-6 fw-light'>Putra dari <br /> Bapak Iwan Hermawan, S.Pd.M.M <br /> Ibu Dini Sobardini, S.Pd</h5>
+                  <h5 className='fs-6 fw-light'><span className='subtextName'>Putra dari</span> <br /> Bapak Iwan Hermawan, S.Pd.M.M <br /> Ibu Dini Sobardini, S.Pd</h5>
                 </div>
               </div>
             </div>

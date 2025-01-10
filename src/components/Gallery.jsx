@@ -75,6 +75,7 @@ export default function Gallery() {
                 <div className="img-holder">
                   <a href={photos1} className="fancybox"
                     data-fancybox="gallery"
+                    data-caption="Masjid Salman ITB, 26 Desember 2024"
                   >
                     <img src={photos1} alt="" className="img img-responsive img-height-custom" />
                     <div className="hover-content">
@@ -87,6 +88,7 @@ export default function Gallery() {
                 <div className="img-holder">
                   <a href={photos2} className="fancybox"
                     data-fancybox="gallery"
+                    data-caption="Masjid Salman ITB, 26 Desember 2024"
                   >
                     <img src={photos2} alt="" className="img img-responsive img-height-custom" />
                     <div className="hover-content">
@@ -98,6 +100,7 @@ export default function Gallery() {
               <div className="grid">
                 <div className="img-holder">
                   <a href={photos3} data-fancybox="gallery" className="fancybox"
+                    data-caption="Taman Ganesha, 26 Desember 2024"
                   >
                     <img src={photos3} alt="" className="img img-responsive img-height-custom" />
                     <div className="hover-content">
@@ -110,6 +113,7 @@ export default function Gallery() {
                 <div className="img-holder">
                   <a href={photos4} className="fancybox"
                     data-fancybox="gallery"
+                    data-caption="Taman Ganesha, 26 Desember 2024"
                   >
                     <img src={photos4} alt="" className="img img-responsive img-height-custom" />
                     <div className="hover-content">
@@ -122,6 +126,7 @@ export default function Gallery() {
                 <div className="img-holder">
                   <a href={photos5} className="fancybox"
                     data-fancybox="gallery"
+                    data-caption="ITOYA studio, 04 Januari 2025"
                   >
                     <img src={photos5} alt="" className="img img-responsive img-height-custom" />
                     <div className="hover-content">
@@ -134,6 +139,7 @@ export default function Gallery() {
                 <div className="img-holder">
                   <a href={photos6} className="fancybox"
                     data-fancybox="gallery"
+                    data-caption="ITOYA studio, 04 Januari 2025"
                   >
                     <img src={photos6} alt="" className="img img-responsive img-height-custom" />
                     <div className="hover-content">

@@ -6,6 +6,7 @@ import partners4 from '../assets/images/partners/4.png'
 import partners5 from '../assets/images/partners/5.png'
 import partners6 from '../assets/images/partners/6.png'
 import partners7 from '../assets/images/partners/7.png'
+import partners8 from '../assets/images/partners/8.jpg'
 import sectionTitle from '../assets/images/section-title.png';
 import Slider from "react-slick";
 
@@ -76,7 +77,7 @@ export default function Partners() {
                 </a>
               </div>
               <div className="grid">
-                <a href="#" target='_blank'>
+                <a href="javascript:void(0)">
                   <img src={partners3} alt="" />
                 </a>
               </div>
@@ -93,6 +94,11 @@ export default function Partners() {
               <div className="grid">
                 <a href="https://shopee.co.id/souvenirunikterbaru" target='_blank'>
                   <img src={partners7} alt="" />
+                </a>
+              </div>
+              <div className="grid">
+                <a href="https://www.instagram.com/aw.souvenir/" target='_blank'>
+                  <img src={partners8} alt="" />
                 </a>
               </div>
 

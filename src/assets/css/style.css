@@ -5286,7 +5286,7 @@ wpo-hero-section-s2
 
 @media (max-width: 450px) {
   .story-section .story-timeline .img-holder {
-    max-width: 250px;
+    max-width: 350px;
   }
 }
 
@@ -5729,7 +5729,7 @@ wpo-hero-section-s2
 
 .wpo-contact-section .wpo-contact-section-wrapper {
   position: relative;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   -webkit-box-shadow: 0px 2px 16.8px 3.2px rgba(0, 0, 0, 0.08);
@@ -5744,7 +5744,7 @@ wpo-hero-section-s2
     #5d7c78;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     #5d7c78;
-  border-radius: 300px 300px 0px 300px;
+  border-radius: 150px 150px 0px 150px;
 }
 
 @media (max-width: 1200px) {
@@ -5754,7 +5754,7 @@ wpo-hero-section-s2
 }
 
 .wpo-contact-section .wpo-contact-section-wrapper .wpo-section-title {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -5794,11 +5794,11 @@ wpo-hero-section-s2
 }
 
 .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area {
-  padding: 110px 80px 80px;
+  padding: 80px 80px 80px;
   border: 1px solid #fff;
   position: relative;
   z-index: 99;
-  border-radius: 280px 280px 0px 280px;
+  border-radius: 130px 130px 0px 130px;
 }
 
 @media (max-width: 1200px) {
@@ -12999,6 +12999,17 @@ product-design
 .flower1 {
   height: 385px;
 }
+
+@media (max-width: 1024px) {
+  .flower1 {
+    height: 274px;
+  }
+
+  .flower1 {
+    height: 274px;
+  }
+}
+
 .flower2 {
   height: 385px;
   rotate: 180deg;
@@ -13045,6 +13056,7 @@ product-design
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .modal-content {
@@ -13070,7 +13082,7 @@ product-design
 }
 
 .modal-content button:hover {
-  background-color: #ff4500;
+  background-color: #967e72;
 }
 
 .img-height-custom {
@@ -13078,3 +13090,117 @@ product-design
   height: 500px;
   object-fit: cover;
 }
+
+/*  */
+
+.message-list-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.message-list-wrapper {
+  max-height: 400px; /* Batas tinggi maksimal untuk daftar */
+  overflow-y: auto; /* Aktifkan scroll vertikal */
+  overflow-x: hidden; /* Hilangkan scroll horizontal */
+  padding-right: 10px; /* Tambahkan jarak untuk scrollbar */
+  display: flex;
+  flex-direction: column; /* Atur elemen secara vertikal */
+  gap: 15px; /* Jarak antar elemen */
+  scrollbar-width: thin; /* Styling scrollbar (untuk browser modern) */
+  scrollbar-color: #888 transparent; /* Warna scrollbar */
+}
+
+.message-list-wrapper::-webkit-scrollbar {
+  width: 8px; /* Lebar scrollbar */
+}
+
+.message-list-wrapper::-webkit-scrollbar-thumb {
+  background-color: #888; /* Warna scrollbar */
+  border-radius: 4px; /* Membuat scrollbar melengkung */
+}
+
+.message-list-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Warna scrollbar saat hover */
+}
+
+.card {
+  width: 80%; /* Atur lebar card lebih kecil (80% dari container) */
+  margin: 0 auto; /* Pusatkan card dalam wrapper */
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.static-hero .subtextName {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.section-messages {
+}
+
+.section-messages h3 {
+}
+
+.section-messages p {
+}
+
+.rsvp-messages {
+}
+
+/* Gaya scrollbar untuk .styled-scrollbar */
+.styled-scrollbar {
+  scrollbar-width: thin; /* Untuk Firefox */
+  scrollbar-color: #888 #f0f0f0; /* Warna scroll (thumb dan track) */
+}
+
+.styled-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Lebar scrollbar */
+}
+
+.styled-scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Warna track scrollbar */
+}
+
+.styled-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888; /* Warna thumb scrollbar */
+  border-radius: 10px; /* Membuat thumb lebih bulat */
+  border: 2px solid #f0f0f0; /* Memberi efek ruang di thumb */
+}
+
+.styled-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Warna saat thumb dihover */
+}
+
+.card-message {
+  width: 100%;
+  height: auto; /* Sesuaikan otomatis berdasarkan konten */
+  box-sizing: border-box;
+}
+
+/* @media (max-width: 768px) {
+  .card-message {
+    width: 50%;
+  }
+} */

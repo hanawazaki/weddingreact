@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 export default function Event() {
   const [TimeSchedule, setTimeSchedule] = useState('11:30 AM - 01:30 PM');
-  const [isModalOpen, setIsModalOpen] = useState(false); // State untuk kontrol modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [showScheduleLink, setShowScheduleLink] = useState(false);
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export default function Event() {
             </div>
             <div className="wpo-event-right">
               <div className="wpo-event-text">
-                <h2>Resepsi</h2>
+                <h2>Walimatul Ursy</h2>
                 <ul>
                   <li>Sabtu, 18 Jan. 2025 {TimeSchedule}</li>
                   <li>Gedung Senbik</li>

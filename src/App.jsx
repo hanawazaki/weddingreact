@@ -15,6 +15,7 @@ import WeddingTime from './components/WeddingTime';
 import OurStory from './components/OurStory';
 import Gallery from './components/Gallery';
 import Rsvp from './components/Rsvp';
+import Messages from './components/Messages';
 import Event from './components/Event';
 import Partners from './components/Partners';
 import Footer from './components/Footer';
@@ -32,8 +33,6 @@ function App() {
     }, 1000); // Waktu sesuai durasi animasi
   };
 
-
-
   return (
     <>
       {
@@ -50,6 +49,7 @@ function App() {
             <OurStory />
             <Gallery />
             <Rsvp />
+            {/* <Messages /> */}
             <Event />
             <Partners />
             <Footer />
