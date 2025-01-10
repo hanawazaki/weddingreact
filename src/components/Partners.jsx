@@ -77,9 +77,7 @@ export default function Partners() {
                 </a>
               </div>
               <div className="grid">
-                <a href="javascript:void(0)">
-                  <img src={partners3} alt="" />
-                </a>
+                <img src={partners3} alt="" />
               </div>
               <div className="grid">
                 <a href="https://www.instagram.com/dlovamusic.entertainment/" target='_blank'>

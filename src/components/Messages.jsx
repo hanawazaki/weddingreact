@@ -9,25 +9,18 @@ export default function MessageList() {
     const messagesQuery = query(
       collection(db, 'rsvp'),
       orderBy('createdAt', 'desc'),
-      where('message', '!=', '')
     );
 
-    // Mendengarkan perubahan data secara real-time
-    const unsubscribe = onSnapshot(
-      messagesQuery,
-      (querySnapshot) => {
-        const data = querySnapshot.docs.map((doc) => ({
+    const unsubscribe = onSnapshot(messagesQuery, (querySnapshot) => {
+      const data = querySnapshot.docs
+        .map((doc) => ({
           id: doc.id,
           ...doc.data(),
-        }));
-        setMessages(data);
-      },
-      (error) => {
-        console.error('Error fetching messages:', error);
-      }
-    );
+        }))
+        .filter((msg) => msg.message !== '');
+      setMessages(data);
+    });
 
-    // Membersihkan listener saat komponen di-unmount
     return () => unsubscribe();
   }, []);
 

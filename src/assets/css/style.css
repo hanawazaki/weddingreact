@@ -13000,19 +13000,29 @@ product-design
   height: 385px;
 }
 
+.flower2 {
+  height: 385px;
+  rotate: 180deg;
+}
+
 @media (max-width: 1024px) {
   .flower1 {
     height: 274px;
   }
 
-  .flower1 {
+  .flower2 {
     height: 274px;
   }
 }
 
-.flower2 {
-  height: 385px;
-  rotate: 180deg;
+@media (max-width: 768px) {
+  .flower1 {
+    height: 192px;
+  }
+
+  .flower2 {
+    height: 192px;
+  }
 }
 
 @media (max-width: 767px) {
