@@ -4,13 +4,13 @@ import flower1 from '../assets/images/ornament3.png';
 const Cover = ({ onClose, animationClass }) => {
   return (
     <>
-      <div className={`min-vh-100 d-flex align-items-center justify-content-center text-center text-white cover ${animationClass}`} style={styles.container}>
+      <div className={`min-vh-100 d-flex align-items-center justify-content-center text-center cover ${animationClass}`} style={styles.container}>
         <div className="p-4 animate-fade-in">
           <div className="mx-auto mb-4" style={styles.flower}>
-            <Flower className="w-100 h-100" />
+            <Flower className="w-100 h-100 text-white" />
           </div>
           <h1 className="h4 mb-3 text-white">Walimatul Ursy</h1>
-          <h2 className="h3 mb-4" style={styles.textStyle}>Fauziyyah & Hairul</h2>
+          <h2 className="h3 mb-4 text-white" style={styles.textStyle}>Fauziyyah & Hairul</h2>
           <p className="fs-4 mb-4 text-white">18.01.2025</p>
 
           <button style={{
@@ -73,6 +73,7 @@ const styles = {
     height: '64px'
   },
   button: {
+    color: '#000',
     padding: '0.75rem 1.5rem',
     fontSize: '1.2rem',
     backgroundColor: '#fff',

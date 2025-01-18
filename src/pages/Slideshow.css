@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic&display=swap");
+
+@font-face {
+  font-family: "gagalin";
+  src: url("/src/assets/fonts/Gagalin-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "le jour script";
+  src: url("/src/assets/fonts/LeJourScript-Eaqpg.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "le jour serif";
+  src: url("/src/assets/fonts/LeJourSerif-OVZMo.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.antic-regular {
+  font-family: "Antic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gagalin {
+  font-family: "Gagalin", sans-serif; /* Fallback font jika font tidak tersedia */
+}
+
+.lejour-serif {
+  font-family: "Le jour serif";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lejour-script {
+  font-family: "Le jour script";
+  font-weight: 400;
+  font-style: normal;
+}

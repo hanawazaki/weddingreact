@@ -7,6 +7,7 @@ import partners5 from '../assets/images/partners/5.png'
 import partners6 from '../assets/images/partners/6.png'
 import partners7 from '../assets/images/partners/7.png'
 import partners8 from '../assets/images/partners/8.jpg'
+import partners9 from '../assets/images/partners/9.png'
 import sectionTitle from '../assets/images/section-title.png';
 import Slider from "react-slick";
 
@@ -74,6 +75,11 @@ export default function Partners() {
               <div className="grid">
                 <a href="https://www.instagram.com/dival_weddingorganizer/" target='_blank'>
                   <img src={partners1} alt="" />
+                </a>
+              </div>
+              <div className="grid">
+                <a href="https://www.instagram.com/abyraihan_mc/" target='_blank'>
+                  <img src={partners9} alt="" />
                 </a>
               </div>
               <div className="grid">

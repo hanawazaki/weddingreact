@@ -13052,6 +13052,12 @@ product-design
   transition: background-color 0.3s ease;
 }
 
+@media (max-width: 425px) {
+  .btn-schedule {
+    font-size: 14px;
+  }
+}
+
 .btn-schedule:hover {
   background-color: #a08679; /* Warna latar belakang tombol saat hover */
 }

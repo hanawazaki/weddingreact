@@ -1,63 +1,30 @@
 import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './assets/css/themify-icons.css'
-import './assets/css/font-awesome.min.css'
-import './assets/css/flaticon.css'
-import './assets/css/style.css'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
-import Preloader from './components/Preloader'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import WeddingTime from './components/WeddingTime';
-import OurStory from './components/OurStory';
-import Gallery from './components/Gallery';
-import Rsvp from './components/Rsvp';
-import Messages from './components/Messages';
-import Event from './components/Event';
-import Partners from './components/Partners';
-import Footer from './components/Footer';
-import { useState } from 'react';
-import Cover from './components/Cover';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router';
+
+import Invitation from './pages/invitation/Invitation';
+import Bukutamu from './pages/bukutamu/Bukutamu';
+import Vipscreen from './pages/vipscreen/Vipscreen';
+import Slideshow from './pages/Slideshow';
 
 function App() {
-  const [showCover, setShowCover] = useState(true);
-  const [animationClass, setAnimationClass] = useState('');
-
-  const handleCloseCover = () => {
-    setAnimationClass('fade-out'); // Tambahkan kelas animasi
-    setTimeout(() => {
-      setShowCover(false); // Sembunyikan cover setelah animasi selesai
-    }, 1000); // Waktu sesuai durasi animasi
-  };
-
+  const guests = [
+    { nama: "Asep", leave_status: false, status: true, selected: false },
+    { nama: "Dadang", leave_status: false, status: true, selected: false },
+    { nama: "Adi", leave_status: false, status: true, selected: false },
+    { nama: "Nina", leave_status: true, status: false, selected: false },
+    { nama: "Burhan", leave_status: false, status: true, selected: false },
+  ];
   return (
-    <>
-      {
-        showCover ? (
-          <div>
-            <Preloader />
-            <Cover onClose={handleCloseCover} animationClass={animationClass} />
-          </div>
-        ) : (
-          <div className="page-wrapper">
-            <Header />
-            <Hero />
-            <WeddingTime />
-            <OurStory />
-            <Gallery />
-            <Rsvp />
-            {/* <Messages /> */}
-            <Event />
-            <Partners />
-            <Footer />
-          </div>
-        )
-      }
-
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Invitation />} />
+        <Route path="/bukutamu" element={<Bukutamu />} />
+        <Route path="/vipscreen" element={<Vipscreen />} />
+        <Route path="/slideshow" element={<Slideshow specialguest={guests} />} />
+      </Routes>
+    </Router>
   )
 }
 
