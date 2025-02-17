@@ -6,17 +6,16 @@ import thankyouImage from "../assets/images/slideshow/thankyou.png";
 import './Slideshow.css'
 
 const Slideshow = () => {
-  const [specialguest, setSpecialGuest] = useState([]); // Data tamu VIP
-  const [currentIndex, setCurrentIndex] = useState(0); // Indeks saat ini
-  const [manualSelected, setManualSelected] = useState(null); // Indeks manual
-  const [previousIndex, setPreviousIndex] = useState(0); // Indeks terakhir sebelum manual
+  const [specialguest, setSpecialGuest] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [manualSelected, setManualSelected] = useState(null);
+  const [previousIndex, setPreviousIndex] = useState(0);
   const [bgImage, setBgImage] = useState("");
   const [message, setMessage] = useState({
     name: '',
     katerangan: ''
   });
 
-  // Fetch data dari Firebase
   useEffect(() => {
     const fetchGuests = onSnapshot(
       query(

@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 export default function Header() {
   const [isBackToTopVisible, setIsBackToTopVisible] = useState(false);
   const audioRef = useRef('');
-  const [isPlaying, setIsPlaying] = useState(true); // Status play/pause
+  const [isPlaying, setIsPlaying] = useState(true);
 
   const togglePlayPause = () => {
     const audio = audioRef.current;
@@ -22,7 +22,7 @@ export default function Header() {
     const audio = audioRef.current;
     if (audio) {
       audio.play().catch((err) => {
-        console.error("Auto-play failed:", err); // Tangkap error (misalnya browser memblokir auto-play)
+        console.error("Auto-play failed:", err);
       });
     }
 

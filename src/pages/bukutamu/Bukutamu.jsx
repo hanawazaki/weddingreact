@@ -160,7 +160,7 @@ const Bukutamu = () => {
   const filteredDataVip = vip.filter((item) => {
     const matchesSearch =
       search3 === "" ||
-      item.nama_lengkap.toLowerCase().includes(search3.toLowerCase()) || item.nama_panggilan.toLowerCase().includes(search3.toLowerCase());
+      item.nama_lengkap.toLowerCase().includes(search3.toLowerCase());
     const matchesKeluarga =
       pihakKeluarga === "" || item.pihak === pihakKeluarga;
     const matchesKeterangan =
